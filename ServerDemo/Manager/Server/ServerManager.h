@@ -23,4 +23,8 @@
 
 + (instancetype)sharedInstance;
 
+- (void)run;
+- (void)stop;
+- (BOOL)isRunning;
+
 @end

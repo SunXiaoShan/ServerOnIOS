@@ -32,6 +32,24 @@
     return instance;
 }
 
+- (void)run {
+    if ([self isRunning] == NO) {
+        NSError *error;
+        if (![self.http start:&error]) {
+            NSLog(@"Error starting HTTP server: %@", error);
+            return;
+        }
+    }
+}
+
+- (void)stop {
+    [self.http stop];
+}
+
+- (BOOL)isRunning {
+    return [self.http isRunning];
+}
+
 #pragma mark - private function
 
 - (instancetype)init {
