@@ -82,7 +82,7 @@
 - (void)setupRoutes {
     __weak ServerManager *weakSelf = self;
 
-    // for debug
+#ifdef DEBUG
     [self.http get:@"/hello_world_get" withBlock:^(RouteRequest *request, RouteResponse *response) {
         [response respondWithString:@"Hello World!!"];
         [weakSelf debug:@"Hello World!! GET"];
@@ -96,6 +96,7 @@
         [response respondWithString:body];
         [weakSelf debug:@"Hello World!! POST"];
     }];
+#endif
 }
 
 #pragma mark - debug
