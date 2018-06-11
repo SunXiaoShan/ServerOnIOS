@@ -29,3 +29,6 @@ Step 4: Add initial manager
 Other
 You could set custom parameter on setupServer of ServerManager.m
 
+## Demo
+
+![demo](https://github.com/SunXiaoShan/ServerOnIOS/blob/master/images/output.gif)
