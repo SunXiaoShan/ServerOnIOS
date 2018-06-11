@@ -25,14 +25,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (IBAction)actionRin:(id)sender {
-}
-- (IBAction)actionRun:(id)sender {
-}
-- (IBAction)actionRun:(id)sender {
-}
-- (IBAction)actionRun:(id)sender {
-}
 
 - (IBAction)actionGet:(id)sender {
     [self testGet];
